@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>My First JS Game</title>
+	</head>
+	<body>
+		<div class="container has-background-dark has-text-primary">
+			<div id="border" class="border">
+				<div class="ball has-background-success-dark" id="ball"></div>
+			</div>
+			<h1 class="is-size-1-tablet">
+				<span class="has-text-danger is-size-1-tablet"> CATCH FOREST GUMP</span>
+				IF YOU CAN
+			</h1>
+			<button
+				id="startBtn"
+				class="has-background-danger has-text-light btn"
+				onclick="Start()"
+			>
+				START
+			</button>
+			<div class="is-size-1-tablet points has-text-warning" id="points"></div>
+			<div class="lost has-background-danger" id="lost">
+				<h4 class="has-text-success">GAME OVER</h4>
+				<button
+					class="overButton has-background-danger has-text-light"
+					onclick="TryAgain()"
+				>
+					TRY AGAIN
+				</button>
+			</div>
+			<div class="winner has-background-danger" id="winner">
+				<h4 class="has-text-success">YOU WIN!</h4>
+				<button
+					class="overButton has-background-danger has-text-light"
+					onclick="TryAgain()"
+				>
+					TRY AGAIN
+				</button>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
